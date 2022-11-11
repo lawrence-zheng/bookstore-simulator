@@ -1,0 +1,49 @@
+body {
+    background-color: #3C3C3C;
+    font-family: 'Fira Sans', serif;
+    color: white;
+    padding: 100px;
+}
+
+
+  
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+  
+p {
+    font-size: 20px;
+}
+
+.name-bookstore {
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Fira Sans', serif;
+    font-size: 20px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
