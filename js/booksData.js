@@ -69,7 +69,7 @@ const books = {
         "defaultValue": 2,
         "money": 5
     },    
-    "Data Visualization for Dumdums": {
+    "Data Visualization for Dum-dums": {
         "description": "a textbook giving easy to understand explanations of how to get started with data visuallization",
         "size": "large",
         "color": {

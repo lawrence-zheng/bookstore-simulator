@@ -49,6 +49,18 @@ input {
     padding-bottom: 20px;
 }
 
+
+.button {
+    padding: 10px;
+    background: white;
+    margin: 10px;
+    color: black;
+
+}
+
+.button:hover{
+    background: lightgrey;
+}
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
