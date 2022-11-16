@@ -1,8 +1,9 @@
 body {
     background-color: #3C3C3C;
-    font-family: 'Fira Sans', serif;
+    font-family: 'Arvo', serif;
     color: white;
     padding: 100px;
+    padding-top: 50px;
 }
 
 
@@ -68,4 +69,60 @@ input {
 	100% {
 		opacity: 1;
 	}
+}
+
+
+/* styles for gameplay page */
+
+.top-section {
+    display: flex;
+    border: medium dashed rgba(148, 90, 19, 0.511);
+    justify-content: space-between;
+}
+
+.bookstore-name {
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+.time {
+    align-self: flex-end;
+}
+
+.status-bar {
+    display: flex;
+}
+
+.status {
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.status-thumbnail {
+    width:22px;
+    height:20px;
+}
+
+.hue-shift {
+    filter: saturate(500%) contrast(800%) brightness(40%) 
+    invert(80%) sepia(50%) hue-rotate(120deg);
+}
+
+.time {
+    background-color: rgb(86, 84, 84);
+    padding: 10px;
+    text-align: center;
+}
+
+#day {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#hours {
+    color: rgb(197, 197, 197);
+}
+
+#clock {
+    padding-bottom: 10px;
 }

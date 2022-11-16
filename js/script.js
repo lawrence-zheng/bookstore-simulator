@@ -7,4 +7,4 @@ if (localStorage.getItem('storeName') != null) {
     storeName = localStorage.getItem('storeName');
 }
 
-document.getElementById("bookstore-name").innerHTML = storeName;
+document.querySelectorAll(".bookstore-name").innerHTML = storeName;

@@ -4,21 +4,46 @@
 <title>Bookstore simulator</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css  ">
-<link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=Fira+Sans">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 <script defer src="js/script.js"></script>
 <body>
-<h1 id = "bookstore-name">Your bookstore</h1>
 
-<div class = "section time"><div class = "title">Time:</div> 10am</div>
-<div class = "section line">
-    <div class = "title">
-        Customers in line:
+<div class = "top-section">
+    <div class = "header">
+
+        <div class = "bookstore-name">Your bookstore</div>
+
+        <div class = "status-bar">
+            <div class = "status" id = "money">
+                <img class = "status-thumbnail" src="assets/temp-assets/money.png">
+                <span class = "status-text">$50</span>
+            </div>
+            <div class = "status" id = "happy">
+                <img class = "status-thumbnail" src="assets/temp-assets/smiley-face.png">
+                <span class = "status-text">3</span>
+            </div>
+            <div class = "status" id = "star-rating">
+                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
+                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
+                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
+                <img class = "status-thumbnail hue-shift" src="assets/temp-assets/star-filled.png">
+                <img class = "status-thumbnail hue-shift" src="assets/temp-assets/star-filled.png">
+            </div>
+        </div>
+
+
     </div>
-    (x)(x)(x)
-    <input type="submit" value="Help customers">
+    <div class = "time-container">
+        <div class = "time">
+            <div class = "time-element" id = "day">DAY 3</div>
+            <div class = "time-element" id = "clock">CLOCK</div>
+            <div class = "time-element" id = "hours">Hours: 10am - 6pm</div>
+        </div>
     </div>
-<div class = "section customer">Customer at recommendation corner: </div>
+
+</div>
 
 </body>
 </html>
