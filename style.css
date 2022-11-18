@@ -76,7 +76,6 @@ input {
 
 .top-section {
     display: flex;
-    border: medium dashed rgba(148, 90, 19, 0.511);
     justify-content: space-between;
 }
 
@@ -125,4 +124,112 @@ input {
 
 #clock {
     padding-bottom: 10px;
+}
+
+.gameplay-container {
+    margin-top: 20px;
+}
+
+#bookshelf {
+    background-color: rgba(164, 122, 48, 0.591);
+    margin-left: 60%;
+}
+
+.location {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    opacity: 0.9;
+    letter-spacing: .1rem;
+    width: 400px;
+    border-bottom: 20px solid rgba(1, 1, 1, 0.2);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.character {
+    width:35px;
+    height:70px;
+}
+
+.container-plane {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+#protag-plane {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#protag {
+    padding-left: 220px;
+}
+
+#counter-plane {
+    display: flex;
+
+}
+
+#checkout {
+    background-color: rgba(183, 183, 183, 0.591);
+
+}
+
+#rec-corner {
+    background-color: rgba(67, 59, 153, 0.591);
+
+}
+
+#customer-plane {
+    display: flex;
+}
+
+.checkout-align {
+    margin-left: 50px;
+    width: 400px;
+
+}
+
+.rec-align {
+    width: 400px;
+    margin-left: 100px;
+
+}
+
+.customer-spawn {
+
+
+    display: flex;
+
+
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    opacity: 0.9;
+    letter-spacing: .1rem;
+    width: 400px;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    padding-top: 10px;
+}
+
+.customer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#checkout-customers {
+    flex-direction: column;
+    padding-left: 90px;
 }
