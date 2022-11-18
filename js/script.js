@@ -13,3 +13,19 @@ if (localStorage.getItem('storeName') != null) {
 }
 
 document.querySelector(".bookstore-name").innerHTML = storeName;
+
+
+function moveToRecCorner() {
+    console.log("move to rec corner")
+    player = document.querySelector("#protag");
+    player.style.paddingLeft = "780px";
+    
+}
+
+
+function moveToCheckout() {
+    console.log("move to checkout")
+    player = document.querySelector("#protag");
+    player.style.paddingLeft = "220px";
+    
+}

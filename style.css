@@ -173,6 +173,9 @@ input {
 
 #protag {
     padding-left: 220px;
+    transition-property: padding-left;
+    transition-duration: 4s;
+    animation-timing-function: ease;
 }
 
 #counter-plane {
