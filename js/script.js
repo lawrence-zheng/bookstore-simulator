@@ -1,10 +1,15 @@
 
 
-let storeName = "[bookstore name]";
+let storeName = "Your bookstore";
 
 if (localStorage.getItem('storeName') != null) {
-    console.log("retrieved from local storage")
-    storeName = localStorage.getItem('storeName');
+    localStorageName = localStorage.getItem('storeName');
+    
+    if (localStorageName.length !==  0) {
+        storeName = localStorageName;
+        console.log("retrieved from local storage");
+    }
+    
 }
 
-document.querySelectorAll(".bookstore-name").innerHTML = storeName;
+document.querySelector(".bookstore-name").innerHTML = storeName;
