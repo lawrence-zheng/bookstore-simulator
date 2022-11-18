@@ -25,13 +25,14 @@ function moveToCheckout() {
     console.log("move to checkout")
     if (playerPos == 0) {
         player.style.transitionDuration = "0s";
+        checkout1();
     } else if (playerPos == 1){
         player.style.transitionDuration = "3s";
     } else if (playerPos == 2){
         player.style.transitionDuration = "4s";
     }
     player.style.paddingLeft = "220px";
-    playerPos = 0;
+    setTimeout(() => playerPos = 0, 1000);
     
 }
 
@@ -64,4 +65,34 @@ function moveToBookshelf() {
     player.style.paddingLeft = "980px";
     playerPos = 2;
     
+}
+
+
+//customer interaction for checkout
+
+let numCheckoutCustomers = 3;
+
+function checkout1() {
+    setTimeout(() => checkout2(), 2000);
+    
+    let statusMessage = document.getElementById("protag-status");
+    statusMessage.style.opacity = '100';
+    statusMessage.innerHTML = "Checking out...";
+    
+}
+
+function checkout2() {
+    console.log("checkout");
+    statusMessage = document.getElementById("protag-status");
+    let firstImage = document.getElementsByClassName("checkout-customer");
+    removeTarget = firstImage[0];
+    removeTarget.style.opacity = '0';
+    setTimeout(() => removeTarget.remove(), 2000);
+    statusMessage.style.opacity = '0';
+    setTimeout(() => removeTarget.remove(), 500);
+}
+
+
+function addCheckoutCustomer() {
+
 }

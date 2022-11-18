@@ -8,3 +8,5 @@ function saveName() {
     console.log("name saved as " + storeName);
     window.location.href = "gameplay.html";
 }
+
+

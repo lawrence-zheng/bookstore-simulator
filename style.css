@@ -230,6 +230,16 @@ input {
 .customer {
     margin-left: 10px;
     margin-right: 10px;
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+#protag-status {
+    padding-bottom: 100px;
+    color:rgb(119, 119, 119);
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
 }
 
 #checkout-customers {
