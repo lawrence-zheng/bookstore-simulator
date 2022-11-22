@@ -33,6 +33,8 @@ function moveToCheckout() {
     }
     player.style.paddingLeft = "220px";
     setTimeout(() => playerPos = 0, 1000);
+    hideDialogue();
+    hideBookshelf();
     
 }
 
@@ -48,6 +50,8 @@ function moveToRecCorner() {
     }
     player.style.paddingLeft = "780px";
     playerPos = 1;
+    showDialogue();
+    hideBookshelf();
     
 }
 
@@ -64,6 +68,8 @@ function moveToBookshelf() {
     }
     player.style.paddingLeft = "980px";
     playerPos = 2;
+    hideDialogue();
+    setTimeout(() =>  showBookshelf(), 1000);
     
 }
 
@@ -95,4 +101,28 @@ function checkout2() {
 
 function addCheckoutCustomer() {
 
+}
+
+//customer interaction for rec corner
+
+function showDialogue() {
+    let dialogueBox = document.getElementById("dialogue-box");
+    dialogueBox.style.opacity = '100';
+    
+}
+
+function hideDialogue() {
+    let dialogueBox = document.getElementById("dialogue-box");
+    dialogueBox.style.opacity = '0';
+}
+
+function showBookshelf() {
+    let bookshelfBox = document.getElementById("bookshelf-box");
+    bookshelfBox.style.opacity = '90';
+    
+}
+function hideBookshelf() {
+    let bookshelfBox = document.getElementById("bookshelf-box");
+    bookshelfBox.style.opacity = '0';
+    
 }

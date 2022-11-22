@@ -246,3 +246,35 @@ input {
     flex-direction: column;
     padding-left: 90px;
 }
+
+.dialogue {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    color:rgba(1, 1, 1, 1);
+    opacity: 0;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+.dialogue-text {
+    padding: 20px;
+}
+
+.customer-portrait {
+    height: 100px;
+}
+
+#bookshelf-box {
+    height: 250px;
+    background-color:rgba(241, 255, 212, 0.394)
+}
+
+.book-link {
+    color: blue;
+    font-weight: bold;
+}
