@@ -1,4 +1,5 @@
 // setting store name
+let customersServed = 0;
 
 let storeName = "Your bookstore";
 
@@ -151,7 +152,7 @@ function addCheckoutCustomer() {
 function showDialogue() {
     let dialogueBox = document.getElementById("dialogue-box");
     dialogueBox.style.opacity = '100';
-    dialogueBox.style.pointerEvents = 'auto';
+    dialogueBox.style.pointerEvents = 'cursor';
     dialogueBox.style.height = '500';
 
     
@@ -193,4 +194,13 @@ function hideCheckout() {
     checkoutBox.style.opacity = '0';
     checkoutBox.style.pointerEvents = 'none';
     checkoutBox.style.height = '0';
+}
+
+
+
+function recommend() {
+    console.log(this.id);
+    if (customersServed == 0) {
+
+    }
 }
