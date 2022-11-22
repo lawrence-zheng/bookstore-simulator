@@ -19,8 +19,10 @@ const timeHand = document.querySelector('.time-hand');
 let time = 0;
 
 function updateTime() {
-    timeHand.style.transform = "rotate(" + time/10 + "deg)";
-    time++;
+    if (time/10 < 180) {
+        timeHand.style.transform = "rotate(" + time/10 + "deg)";
+        time++;
+    }
 }
 
 setInterval(updateTime, 100);
