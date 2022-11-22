@@ -44,22 +44,7 @@
                 <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
             </span>
         </div>
-        <div class = "dialogue" id = "dialogue-box">
-            <img class = "customer-portrait" src = "assets/temp-assets/curly.png">
-            <div class = "dialogue-text">
-            "Hi, can you recommend a book for me? I really like thriller novels!"
-            <p><span class = "book-link">‣ Talk more with this customer</span></p>
-            
-            </div>
-        </div>
-        <div class = "dialogue" id = "bookshelf-box">
-            <div class = "dialogue-text">
-                <p>Recommend a book from the bookshelf:</p>
-                1. <span class = "book-link">"Sea of Monsters"</span>- an adventure novel about a young hero battling mythical creatures<br><br>
-                2. <span class = "book-link">"Hearty Dinners"</span> - a cookbook containing recipes from many different cultures, written by celebrity chef Gordino Ramsee<br><br>
-                3. <span class = "book-link">"Data Visualization 101"</span> - a textbook giving easy to understand explanations of how to get started with data visuallization
-            </div>
-        </div>
+
     </div>
     <div class = "sidebar">
 
@@ -74,7 +59,29 @@
         </div>
 
         <div class = "message-box">
-            
+            <div class = "dialogue" id = "dialogue-box">
+                <img class = "customer-portrait" src = "assets/temp-assets/curly.png">
+                <div class = "dialogue-text">
+                "Hi, can you recommend a book for me? I really like thriller novels!"
+                <p><span class = "book-link">‣ Talk more with this customer</span></p>
+                
+                </div>
+            </div>
+            <div class = "dialogue" id = "bookshelf-box">
+                <div class = "dialogue-text">
+                    <p>Recommend a book from the bookshelf:</p>
+                    <div class = "book-link" id ="1">"Sea of Monsters"</div>
+                    <div class = "book-link" id ="2">Hearty Dinners"</div>
+                    <div class = "book-link" id = "3">"Data Visualization 101"</div>
+
+
+                </div>
+            </div>
+            <div class = "dialogue" id = "checkout-box">
+                <div class = "dialogue-text" id = "checkout-link" onclick="checkout1()">
+                   Click the counter to checkout
+                </div>
+            </div>
         </div>
     
     </div>

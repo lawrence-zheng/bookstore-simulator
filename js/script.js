@@ -54,6 +54,7 @@ function moveToCheckout() {
         hideBookshelf();
         setTimeout(() => playerPos = 0, delay);
         setTimeout(() => movementDisabled = false, delay);
+        setTimeout(() => showCheckout(), delay);
 
     } else {
         console.log("could not move because there is already a movement command");
@@ -81,6 +82,7 @@ function moveToRecCorner() {
         setTimeout(() => movementDisabled = false, delay);
         setTimeout(() => showDialogue(), delay);
         hideBookshelf();
+        hideCheckout();
     } else {
         console.log("could not move because there is already a movement command");
     }
@@ -107,6 +109,7 @@ function moveToBookshelf() {
         setTimeout(() => movementDisabled = false, delay);
         setTimeout(() => showBookshelf(), delay);
         hideDialogue();
+        hideCheckout();
     } else {
         console.log("could not move because there is already a movement command");
     }
@@ -149,6 +152,7 @@ function showDialogue() {
     let dialogueBox = document.getElementById("dialogue-box");
     dialogueBox.style.opacity = '100';
     dialogueBox.style.pointerEvents = 'auto';
+    dialogueBox.style.height = '500';
 
     
 }
@@ -157,6 +161,7 @@ function hideDialogue() {
     let dialogueBox = document.getElementById("dialogue-box");
     dialogueBox.style.opacity = '0';
     dialogueBox.style.pointerEvents = 'none';
+    dialogueBox.style.height = '0';
 
 }
 
@@ -164,11 +169,28 @@ function showBookshelf() {
     let bookshelfBox = document.getElementById("bookshelf-box");
     bookshelfBox.style.opacity = '90';
     bookshelfBox.style.pointerEvents = 'auto';
+    bookshelfBox.style.height = '500';
     
 }
 function hideBookshelf() {
     let bookshelfBox = document.getElementById("bookshelf-box");
     bookshelfBox.style.opacity = '0';
     bookshelfBox.style.pointerEvents = 'none';
+    bookshelfBox.style.height = '0';
     
+}
+
+
+function showCheckout() {
+    let checkoutBox = document.getElementById("checkout-box");
+    checkoutBox.style.opacity = '90';
+    checkoutBox.style.pointerEvents = 'auto';
+    checkoutBox.style.height = '500';
+    
+}
+function hideCheckout() {
+    let checkoutBox = document.getElementById("checkout-box");
+    checkoutBox.style.opacity = '0';
+    checkoutBox.style.pointerEvents = 'none';
+    checkoutBox.style.height = '0';
 }

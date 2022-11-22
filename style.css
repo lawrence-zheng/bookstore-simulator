@@ -177,7 +177,7 @@ input {
 }
 
 #protag {
-    padding-left: 150px;
+    padding-left: 250px;
     transition-property: padding-left;
     transition-duration: 4s;
     animation-timing-function: ease;
@@ -254,17 +254,13 @@ input {
 }
 
 .dialogue {
-    position:fixed;
-    bottom: 0;
-    right: 0;
-    width: 800px;
-    height: 100px;
     background-color: rgb(230, 230, 230);
     display: flex;
     color:rgba(1, 1, 1, 1);
     opacity: 0;
     -webkit-transition: opacity 1000ms linear;
     transition: opacity 1000ms linear;
+    height: 0px;
 }
 
 .dialogue-text {
@@ -277,8 +273,7 @@ input {
 }
 
 #bookshelf-box {
-    height: 250px;
-    background-color:rgba(241, 255, 212, 0.394)
+    height: 600px;
 }
 
 .book-link {
@@ -313,6 +308,18 @@ input {
 }
 
 .message-box {
-    background-color: rgb(59, 59, 96);
+    background-color: rgb(191, 191, 191);
     height: 550px;
+}
+
+#checkout-link {
+    padding: 30px;
+    background-color:rgb(122, 73, 13);
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.book-link {
+    padding: 10px;
 }
