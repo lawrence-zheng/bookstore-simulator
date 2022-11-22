@@ -78,7 +78,7 @@ function moveToRecCorner() {
             player.style.transitionDuration = "1.5s";
             delay = 1500;
         }
-        player.style.paddingLeft = "600px";
+        player.style.paddingLeft = "550px";
         setTimeout(() => playerPos = 1, delay);
         setTimeout(() => movementDisabled = false, delay);
         setTimeout(() => showDialogue(), delay);
@@ -104,7 +104,7 @@ function moveToBookshelf() {
         } else if (playerPos == 2){
             player.style.transitionDuration = "0s";
         }
-        player.style.paddingLeft = "680px";
+        player.style.paddingLeft = "660px";
         playerPos = 2;
         setTimeout(() => playerPos = 2, delay);
         setTimeout(() => movementDisabled = false, delay);
@@ -154,6 +154,7 @@ function showDialogue() {
     dialogueBox.style.opacity = '100';
     dialogueBox.style.pointerEvents = 'cursor';
     dialogueBox.style.height = '500';
+    //dialogueBox.style.padding = '20';
 
     
 }
@@ -163,6 +164,7 @@ function hideDialogue() {
     dialogueBox.style.opacity = '0';
     dialogueBox.style.pointerEvents = 'none';
     dialogueBox.style.height = '0';
+    //dialogueBox.style.padding = '0';
 
 }
 
@@ -171,6 +173,7 @@ function showBookshelf() {
     bookshelfBox.style.opacity = '90';
     bookshelfBox.style.pointerEvents = 'auto';
     bookshelfBox.style.height = '500';
+    //bookshelfBox.style.padding = '20';
     
 }
 function hideBookshelf() {
@@ -178,6 +181,7 @@ function hideBookshelf() {
     bookshelfBox.style.opacity = '0';
     bookshelfBox.style.pointerEvents = 'none';
     bookshelfBox.style.height = '0';
+    //bookshelfBox.style.padding = '0';
     
 }
 
@@ -187,6 +191,7 @@ function showCheckout() {
     checkoutBox.style.opacity = '90';
     checkoutBox.style.pointerEvents = 'auto';
     checkoutBox.style.height = '500';
+    //checkoutBox.style.padding = '20';
     
 }
 function hideCheckout() {
@@ -194,6 +199,7 @@ function hideCheckout() {
     checkoutBox.style.opacity = '0';
     checkoutBox.style.pointerEvents = 'none';
     checkoutBox.style.height = '0';
+    //checkoutBox.style.padding = '0';
 }
 
 
@@ -201,6 +207,6 @@ function hideCheckout() {
 function recommend() {
     console.log(this.id);
     if (customersServed == 0) {
-        
+
     }
 }
