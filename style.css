@@ -76,7 +76,7 @@ input {
 
 .sidebar {
     width: 500px;
-    padding-left: 50px;
+    padding-left: 0px;
     padding-top: 20px;
 }
 
@@ -131,6 +131,7 @@ input {
     width: 800px;
     background-color: rgba(73, 53, 30, 0.591);
     margin-right: 0px;
+    height: 800px;
 }
 
 #bookshelf {
@@ -287,11 +288,12 @@ input {
 
 
 .hand {
-    width: 50%;
+    width: 40%;
     height: 6px;
     background: #61afff;
     position: relative;
     top: 50%;
+    left: 40px;
     border-radius: 6px;
     transform-origin: 100%;
     transform: rotate(90deg);
@@ -306,3 +308,11 @@ input {
     display: flex;
 }
 
+.time-container {
+    background-color: rgb(75, 75, 75);
+}
+
+.message-box {
+    background-color: rgb(59, 59, 96);
+    height: 550px;
+}
