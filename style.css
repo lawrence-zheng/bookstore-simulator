@@ -74,14 +74,15 @@ input {
 
 /* styles for gameplay page */
 
-.top-section {
-    display: flex;
-    justify-content: space-between;
+.sidebar {
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .bookstore-name {
     font-size: 45px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .time {
@@ -127,11 +128,15 @@ input {
 
 .gameplay-container {
     margin-top: 20px;
+    width: 800px;
+    background-color: rgba(73, 53, 30, 0.591);
+    margin-right: 0px;
 }
 
 #bookshelf {
     background-color: rgba(164, 122, 48, 0.591);
-    margin-left: 60%;
+    margin-left: 490px;
+    width: 250px;
 }
 
 .location {
@@ -144,7 +149,6 @@ input {
     font-weight: bold;
     opacity: 0.9;
     letter-spacing: .1rem;
-    width: 400px;
     border-bottom: 20px solid rgba(1, 1, 1, 0.2);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -172,7 +176,7 @@ input {
 }
 
 #protag {
-    padding-left: 220px;
+    padding-left: 150px;
     transition-property: padding-left;
     transition-duration: 4s;
     animation-timing-function: ease;
@@ -190,6 +194,7 @@ input {
 
 #rec-corner {
     background-color: rgba(67, 59, 153, 0.591);
+    margin-right: 60px;
 
 }
 
@@ -296,3 +301,8 @@ input {
 .time-hand {
     bottom: 25px;
 }
+
+.main {
+    display: flex;
+}
+

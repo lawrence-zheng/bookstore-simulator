@@ -49,7 +49,7 @@ function moveToCheckout() {
             player.style.transitionDuration = "4s";
             delay = 2000;
         }
-        player.style.paddingLeft = "220px";
+        player.style.paddingLeft = "150px";
         hideDialogue();
         hideBookshelf();
         setTimeout(() => playerPos = 0, delay);
@@ -76,7 +76,7 @@ function moveToRecCorner() {
             player.style.transitionDuration = "1.5s";
             delay = 1500;
         }
-        player.style.paddingLeft = "780px";
+        player.style.paddingLeft = "600px";
         setTimeout(() => playerPos = 1, delay);
         setTimeout(() => movementDisabled = false, delay);
         setTimeout(() => showDialogue(), delay);
@@ -101,7 +101,7 @@ function moveToBookshelf() {
         } else if (playerPos == 2){
             player.style.transitionDuration = "0s";
         }
-        player.style.paddingLeft = "980px";
+        player.style.paddingLeft = "680px";
         playerPos = 2;
         setTimeout(() => playerPos = 2, delay);
         setTimeout(() => movementDisabled = false, delay);

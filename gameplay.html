@@ -10,94 +10,79 @@
 <script src="https://kit.fontawesome.com/be6a96d59f.js" crossorigin="anonymous"></script>
 <script defer src="js/script.js"></script>
 <body>
+<div class = "main">
 
-<div class = "top-section">
-    <div class = "header">
-
+    <div class = "gameplay-container">
         <div class = "bookstore-name">Your bookstore</div>
+        <div class = "container-plane" id = "bookshelf-plane">
+            <span class = "location" id = "bookshelf" onclick="moveToBookshelf()">
+                BOOKSHELF
+            </span>
+        </div>
+        <div class = "container-plane" id = "protag-plane">
+            <img class = "character" id = "protag" src="assets/temp-assets/stick-figure2.png">
+            <span id = "protag-status"></span>
+        </div>
+        <div class = "container-plane" id = "counter-plane">
+            <span class = "location checkout-align" id = "checkout"  onclick="moveToCheckout()">
+                CHECKOUT COUNTER
+            </span>
+            <span class = "location rec-align" id = "rec-corner" onclick="moveToRecCorner()">
+                RECOMMENDATION CORNER
+            </span>
 
-        <div class = "status-bar">
-            <div class = "status" id = "money">
-                <img class = "status-thumbnail" src="assets/temp-assets/money.png">
-                <span class = "status-text">$50</span>
-            </div>
-            <div class = "status" id = "happy">
-                <img class = "status-thumbnail" src="assets/temp-assets/smiley-face.png">
-                <span class = "status-text">3</span>
-            </div>
-            <div class = "status" id = "star-rating">
-                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
-                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
-                <img class = "status-thumbnail" src="assets/temp-assets/star-filled.png">
-                <img class = "status-thumbnail hue-shift" src="assets/temp-assets/star-filled.png">
-                <img class = "status-thumbnail hue-shift" src="assets/temp-assets/star-filled.png">
+
+        </div>
+        <div class = "container-plane" id = "customer-plane">
+            <span class = "customer-spawn checkout-align" id = "checkout-customers">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+            </span>
+            <span class = "customer-spawn rec-align" id = "rec-corner-customers">
+                <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
+            </span>
+        </div>
+        <div class = "dialogue" id = "dialogue-box">
+            <img class = "customer-portrait" src = "assets/temp-assets/curly.png">
+            <div class = "dialogue-text">
+            "Hi, can you recommend a book for me? I really like thriller novels!"
+            <p><span class = "book-link">‣ Talk more with this customer</span></p>
+            
             </div>
         </div>
-
-
+        <div class = "dialogue" id = "bookshelf-box">
+            <div class = "dialogue-text">
+                <p>Recommend a book from the bookshelf:</p>
+                1. <span class = "book-link">"Sea of Monsters"</span>- an adventure novel about a young hero battling mythical creatures<br><br>
+                2. <span class = "book-link">"Hearty Dinners"</span> - a cookbook containing recipes from many different cultures, written by celebrity chef Gordino Ramsee<br><br>
+                3. <span class = "book-link">"Data Visualization 101"</span> - a textbook giving easy to understand explanations of how to get started with data visuallization
+            </div>
+        </div>
     </div>
-    <div class = "time-container">
-        <div class = "time">
-            <div class = "time-element" id = "day"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;DAY 3</div>
-            <div class = "time-element" id = "clock">
-                <img class = "meter" id = "time-meter" src="assets/day night meter.png">
-                <div class="hand time-hand"></div>
+    <div class = "sidebar">
+        <div class = "header">
+    
+            
+    
+
+    
+    
+        </div>
+        <div class = "time-container">
+            <div class = "time">
+                <div class = "time-element" id = "day"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;DAY 3</div>
+                <div class = "time-element" id = "clock">
+                    <img class = "meter" id = "time-meter" src="assets/day night meter.png">
+                    <div class="hand time-hand"></div>
+                </div>
             </div>
         </div>
+    
     </div>
 
 </div>
-
-<div class = "gameplay-container">
-    <div class = "container-plane" id = "bookshelf-plane">
-        <span class = "location" id = "bookshelf" onclick="moveToBookshelf()">
-            BOOKSHELF
-        </span>
-    </div>
-    <div class = "container-plane" id = "protag-plane">
-        <img class = "character" id = "protag" src="assets/temp-assets/stick-figure2.png">
-        <span id = "protag-status"></span>
-    </div>
-    <div class = "container-plane" id = "counter-plane">
-        <span class = "location checkout-align" id = "checkout"  onclick="moveToCheckout()">
-            CHECKOUT COUNTER
-        </span>
-        <span class = "location rec-align" id = "rec-corner" onclick="moveToRecCorner()">
-            RECOMMENDATION CORNER
-        </span>
-
-
-    </div>
-    <div class = "container-plane" id = "customer-plane">
-        <span class = "customer-spawn checkout-align" id = "checkout-customers">
-            <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
-            <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
-            <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
-        </span>
-        <span class = "customer-spawn rec-align" id = "rec-corner-customers">
-            <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
-            <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
-        </span>
-    </div>
-    <div class = "dialogue" id = "dialogue-box">
-        <img class = "customer-portrait" src = "assets/temp-assets/curly.png">
-        <div class = "dialogue-text">
-        "Hi, can you recommend a book for me? I really like thriller novels!"
-        <p><span class = "book-link">‣ Talk more with this customer</span></p>
-        
-        </div>
-    </div>
-    <div class = "dialogue" id = "bookshelf-box">
-        <div class = "dialogue-text">
-            <p>Recommend a book from the bookshelf:</p>
-            1. <span class = "book-link">"Sea of Monsters"</span>- an adventure novel about a young hero battling mythical creatures<br><br>
-            2. <span class = "book-link">"Hearty Dinners"</span> - a cookbook containing recipes from many different cultures, written by celebrity chef Gordino Ramsee<br><br>
-            3. <span class = "book-link">"Data Visualization 101"</span> - a textbook giving easy to understand explanations of how to get started with data visuallization
-        </div>
-    </div>
-</div>
-
-
 
 </body>
 </html>
