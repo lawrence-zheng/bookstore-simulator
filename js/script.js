@@ -14,6 +14,16 @@ if (localStorage.getItem('storeName') != null) {
 
 document.querySelector(".bookstore-name").innerHTML = storeName;
 
+//timer
+const timeHand = document.querySelector('.time-hand');
+let time = 0;
+
+function updateTime() {
+    timeHand.style.transform = "rotate(" + time/10 + "deg)";
+    time++;
+}
+
+setInterval(updateTime, 100);
 
 //movement commands
 
