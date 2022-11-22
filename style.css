@@ -148,6 +148,7 @@ input {
     border-bottom: 20px solid rgba(1, 1, 1, 0.2);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
+    cursor: pointer;
 }
 
 .character {
@@ -262,6 +263,7 @@ input {
 
 .dialogue-text {
     padding: 20px;
+    pointer-events: none;
 }
 
 .customer-portrait {

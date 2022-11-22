@@ -148,21 +148,27 @@ function addCheckoutCustomer() {
 function showDialogue() {
     let dialogueBox = document.getElementById("dialogue-box");
     dialogueBox.style.opacity = '100';
+    dialogueBox.style.pointerEvents = 'auto';
+
     
 }
 
 function hideDialogue() {
     let dialogueBox = document.getElementById("dialogue-box");
     dialogueBox.style.opacity = '0';
+    dialogueBox.style.pointerEvents = 'none';
+
 }
 
 function showBookshelf() {
     let bookshelfBox = document.getElementById("bookshelf-box");
     bookshelfBox.style.opacity = '90';
+    bookshelfBox.style.pointerEvents = 'auto';
     
 }
 function hideBookshelf() {
     let bookshelfBox = document.getElementById("bookshelf-box");
     bookshelfBox.style.opacity = '0';
+    bookshelfBox.style.pointerEvents = 'none';
     
 }
