@@ -201,6 +201,6 @@ function hideCheckout() {
 function recommend() {
     console.log(this.id);
     if (customersServed == 0) {
-
+        
     }
 }
