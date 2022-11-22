@@ -181,6 +181,8 @@ input {
     transition-property: padding-left;
     transition-duration: 4s;
     animation-timing-function: ease;
+    width: 90px;
+    height: 90px;
 }
 
 #counter-plane {
