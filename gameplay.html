@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/be6a96d59f.js" crossorigin="anonymous"></script>
+
 <script defer src="js/script.js"></script>
+<script defer src="js/booksData.js"></script>
 <body>
 <div class = "main">
 
@@ -68,12 +70,21 @@
                 </div>
             </div>
             <div class = "dialogue" id = "bookshelf-box">
-                <div class = "dialogue-text">
+                <div class = "dialogue-text" id = "bookshelf-list">
                     <p>Recommend a book from the bookshelf:</p>
                     <div class = "link book-link" id ="book1" onclick="recommend(this)" >"Sea of Monsters"</div>
                     <div class = "link book-link" id ="book2" onclick="recommend(this)">"Hearty Dinners"</div>
                     <div class = "link book-link" id = "book3" onclick="recommend(this)">"Data Visualization 101"</div>
                     <div class = "link book-link" id = "book4" onclick="recommend(this)">"Vampire Moon"</div>
+
+                    <template id="book-listing-template">
+                        <div class = "book-listing">
+                            <div class = "book book-name">Book name</div>
+                            <div class = "book book-desc">Book description</div>
+                            <div class = "book book-price">Book price</div>
+                        </div>
+                     </template>
+      
 
 
                 </div>

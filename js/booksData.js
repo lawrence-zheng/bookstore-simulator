@@ -80,3 +80,31 @@ const books = {
         "money": 20
     },    
 };
+
+console.log("books data");
+
+
+function createBook(title, book) {
+    const template = document.querySelector('#book-listing-template');
+    const clone = template.content.cloneNode(true);
+    book.element = clone.querySelector(".book-listing");
+
+
+    const bookshelfListElement = document.querySelector('#bookshelf-list');
+    bookshelfListElement.append(book.element);
+
+    //updating the name of the book
+    book.element.querySelector('.book-name').innerText = title;
+
+
+    //updating the description
+    book.element.querySelector('.book-desc').innerText = book.description;
+
+
+}
+
+for (var key in books) {
+    console.log(books[key]);
+    console.log(key);
+    createBook(key, books[key]);
+}
