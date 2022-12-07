@@ -35,12 +35,20 @@ function createShelfListing(book) {
     const template = document.querySelector('#book-listing-template');
     const clone = template.content.cloneNode(true);
     book.element = clone.querySelector(".book-listing");
+    console.log(book.title);
+    console.log(book.element.querySelector('.book-name').innerText);
+    book.element.querySelector('.book-name').innerText = book.title;
+
+
+    book.element.querySelector('.book-listing-text').innerText = book.title;
 
 
     book.element.querySelector('.book-name').innerText = book.title;
     book.element.querySelector('.book-desc').innerText = book.description;
     book.element.querySelector('.book-price').innerText = book.money;
-    console.log(book.title);
+
+
+    
 
     document.querySelector('#bookshelf-list').append(book.element);
 }

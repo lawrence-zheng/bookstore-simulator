@@ -265,9 +265,6 @@ input {
     height: 0px;
 }
 
-.dialogue-text {
-    pointer-events: none;
-}
 
 .customer-portrait {
     height: 100px;
@@ -335,17 +332,54 @@ input {
     user-select: none;
 }
 
-#bookshelf-list {
-    display: flex;
-}
 
 .book-listing {
-    width: 10px;
-    height: 50px;
-    background-color: red;  
-    margin: 10px;
+    padding: 10px;
+    
 }
 
 .book-tooltip {
+
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 105%;
     position: absolute;
+
+      /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 10;
+  
+}
+
+.book-listing:hover .book-tooltip {
+
+    opacity: 1;
+}
+
+.book-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.book-desc {
+    font-size: 0.9em;
+    color:rgb(199, 198, 198);
+    text-align: left;
+}
+
+.book-price {
+    text-align: right;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
