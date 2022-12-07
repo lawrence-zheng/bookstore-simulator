@@ -39,7 +39,7 @@ function createShelfListing(book) {
 
     book.element.querySelector('.book-name').innerText = book.title;
     book.element.querySelector('.book-desc').innerText = book.description;
-    book.element.querySelector('.book-price').innerText = book.price;
+    book.element.querySelector('.book-price').innerText = book.money;
     console.log(book.title);
 
     document.querySelector('#bookshelf-list').append(book.element);

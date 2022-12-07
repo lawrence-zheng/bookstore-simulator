@@ -12,17 +12,14 @@
 
     <div class = "dialogue-test" id = "bookshelf-box">
         <div class = "dialogue-text" id = "bookshelf-list">
-            <p>Recommend a book from the bookshelf:</p>
-            <div class = "link book-link" id ="book1" onclick="recommend(this)" >"Sea of Monsters"</div>
-            <div class = "link book-link" id ="book2" onclick="recommend(this)">"Hearty Dinners"</div>
-            <div class = "link book-link" id = "book3" onclick="recommend(this)">"Data Visualization 101"</div>
-            <div class = "link book-link" id = "book4" onclick="recommend(this)">"Vampire Moon"</div>
 
             <template id="book-listing-template">
                 <div class = "book-listing">
-                    <div class = "book book-name">Book name</div>
-                    <div class = "book book-desc">Book description</div>
-                    <div class = "book book-price">Book price</div>
+                    <div class = 'book-tooltip'>
+                        <div class = "book book-name">Book name</div>
+                        <div class = "book book-desc">Book description</div>
+                        <div class = "book book-price">Book price</div>
+                    </div>
                 </div>
              </template>
 
