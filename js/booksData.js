@@ -6,6 +6,8 @@ class Book {
         this.color = color;
         this.money = money;
 
+        this.element = null;
+
     }
 }
 
@@ -25,5 +27,25 @@ for (var key in bookList) {
     }
 }
 
-console.log(booksActive);
-console.log(booksInactive);
+
+
+//show active books on bookshelf
+
+function createShelfListing(book) {
+    const template = document.querySelector('#book-listing-template');
+    const clone = template.content.cloneNode(true);
+    book.element = clone.querySelector(".book-listing");
+
+
+    book.element.querySelector('.book-name').innerText = book.title;
+    book.element.querySelector('.book-desc').innerText = book.description;
+    book.element.querySelector('.book-price').innerText = book.price;
+    console.log(book.title);
+
+    document.querySelector('#bookshelf-list').append(book.element);
+}
+
+
+for (const book of booksActive) {
+    createShelfListing(book);
+}
