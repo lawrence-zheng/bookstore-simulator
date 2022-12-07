@@ -19,6 +19,8 @@ import bookList from '../data/book-list.json' assert { type: "json" };
 let booksActive = [];
 let booksInactive = [];
 
+let selectedBook = null;
+
 for (var key in bookList) {
     if (bookList[key].default) {
         booksActive.push(new Book(bookList[key].title, bookList[key].description, bookList[key].size, bookList[key].color, bookList[key].money));
@@ -47,7 +49,10 @@ function createShelfListing(book) {
     book.element.querySelector('.book-desc').innerText = book.description;
     book.element.querySelector('.book-price').innerText = book.money;
 
-
+    book.element.querySelector('.book-listing-text').addEventListener('click', () => {
+        selectBook(book);
+        hideBookshelf();
+    });
     
 
     document.querySelector('#bookshelf-list').append(book.element);
@@ -57,3 +62,9 @@ function createShelfListing(book) {
 for (const book of booksActive) {
     createShelfListing(book);
 }
+
+function selectBook(book) {
+    let protagStatus = document.querySelector('#protag-status');
+    protagStatus.innerText = "Holding: " + book.title;
+}
+
